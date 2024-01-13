@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&family=Teko:wght@600&display=swap');
+
+body{
+    background: #1F1517 ;
+    color: #ffffff;
+}
+
+html{
+    font-family: Inter, sans-serif;
+    font-weight:500;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+ul{
+    list-style: none;
+}
+
+.destaque{
+    font-family: Epilogue;
+    text-transform: uppercase;
+    font-size: 1rem; 
+    font-weight: 500;
+     
+}
