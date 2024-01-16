@@ -2,7 +2,6 @@
 @import url('reset.css');
 
 nav{
-
     max-width: 1120px;
     margin: auto;
     padding: 1.5rem 10rem;
@@ -25,9 +24,19 @@ nav .logo{
 
 nav .menu{
     display: flex;
+    cursor: pointer;
     flex-direction: row;
     gap: 1.5rem;
     color: #FFF2E780;
+    transition: .5s;
+}
+
+nav .menu a{
+    transition: .5s;    
+}
+
+nav .menu a:hover{
+    color: #FFF2E7;
 }
 
 nav .github{
@@ -82,9 +91,6 @@ font-weight: 800;
 line-height: 120%; /* 67.2px */
 }
 
-main .principal .marrom{
-    color: #A45A49;    
-}
 
 main .principal hr{
     border-color: #A45A49;
@@ -112,3 +118,162 @@ main .principal .hero-imagens-container > figure > img{
     border: 0.5rem;
 }
 
+
+/* Estino do botão */
+
+.botao-container{
+    width: 100%;
+    max-width: 1120px;
+    
+    margin: auto;
+    transform: translate("0 -50%");
+}
+
+button{
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #A45A49;
+    cursor: pointer;
+}
+
+/* Estino receitas */
+
+.receitas {
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+} 
+
+.receitas .receitas-cabecalho{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.receitas .receitas-titulo{
+    color: #FFF2E7;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+.receitas .receitas-sub-titulo{
+    color: #C7BAB3;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Estino das cards receitas */
+
+.receitas-card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    /* padding: 0rem 10rem; */
+}
+
+.receitas .receitas-card{
+    background: #241a1c;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 29rem;
+
+    margin-top: 1rem;
+
+}
+
+.receitas .receitas-card-cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.receitas .receitas-card-cabecalho-detalhes{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.receitas .receita-titulo{
+    color: #FFF2E7;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.receitas .receitas-avaliacao{
+    color: #756A67;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.receitas .receitas-discricao{
+    color: #C7BAB3;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}    
+
+.receitas .receita-autor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.receitas .receita-autor > img{
+    border-radius: 20rem;
+    width: 2rem;
+}
+
+.receitas .receita-autor-nome{
+    color: #C7BAB3;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    padding: 4rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    background: #23181A;
+}
+
+footer .footer-copy{
+    color: #FFF2E7;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+footer .footer-autor{
+    color: rgba(255, 242, 231, 0.50);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+}

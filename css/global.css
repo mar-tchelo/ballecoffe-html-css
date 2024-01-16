@@ -19,6 +19,8 @@ ul{
     list-style: none;
 }
 
+/* destaques */
+
 .destaque{
     font-family: Epilogue;
     text-transform: uppercase;
@@ -26,3 +28,13 @@ ul{
     font-weight: 500;
      
 }
+
+.marrom{
+    color: #A45A49;    
+}
+
+.amarelo{
+    color: #E7A80E;
+}
+
+/* Fim destaques */
